@@ -23,12 +23,12 @@ async function main() {
   app.use(express.json());
 
   app.get("/", function (req, res) {
-    res.send("Hello World");
+    res.send("Olá Papai! coloque '/oi' no final da url para ver a outra mensagem!");
   });
 
   // /oi -> "Olá, mundo"
   app.get("/oi", function (req, res) {
-    res.send("Olá, mundo");
+    res.send("Olá, amei o curso de back end obrigada papai!");
   });
 
   // Endpoints de Heróis
