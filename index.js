@@ -22,16 +22,16 @@ async function main() {
   // da requisição
   app.use(express.json());
 
-  app.get("/", function (req, res) {
-    res.send("<h1>Olá Papai! coloque '/oi' no final da url para ver a outra mensagem!</h1> <button href='/oi'>Click Here</button>");
-  });
+
 
   // /oi -> "Olá, mundo"
   app.get("/oi", function (req, res) {
     res.send("Olá, amei o curso de back end obrigada papai!");
   });
 
-
+  app.get("/", function (req, res) {
+    res.send("<h1>Olá Papai! coloque '/oi' no final da url para ver a outra mensagem!</h1> <button href='/oi'>Click Here</button>");
+  });
   // Endpoints de Heróis
 
 //   const herois = ["Mulher Maravilha", "Capitã Marvel", "Homem de Ferro"];
