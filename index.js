@@ -28,7 +28,7 @@ async function main() {
 
   // /oi -> "Olá, mundo"
   app.get("/oi", function (req, res) {
-    res.send("<table border='1'><th><td>ola</td><td>ola</td></th><th><td>ola</td><td>ola</td></th><</table>");
+    res.send("<table border='1'><th><tr>Header</tr><td>ola</td><tr>Header</tr><td>ola</td><td>ola</td></th></table>");
   });
 
 
