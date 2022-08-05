@@ -23,12 +23,12 @@ async function main() {
   app.use(express.json());
 
   app.get("/", function (req, res) {
-    res.send("Escolha o item que você quer comprar <button><a href='/oi'>Veja o catalogo aqui!</a><th><td>ola</td><td>ola</td></th></button>");
+    res.send("Escolha o item que você quer comprar <button><a href='/oi'>Veja o catalogo aqui!</a></button>");
   });
 
   // /oi -> "Olá, mundo"
   app.get("/oi", function (req, res) {
-    res.send("<table border='1'><th><td>ola</td><td>ola</td></th></table>");
+    res.send("<table border='1'><th><td>ola</td><td>ola</td></th><th><td>ola</td><td>ola</td></th><</table>");
   });
 
 
