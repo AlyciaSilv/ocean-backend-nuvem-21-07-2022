@@ -30,6 +30,9 @@ async function main() {
   app.get("/oi", function (req, res) {
     res.send("Olá, amei o curso de back end obrigada papai!");
   });
+   app.get("/essaeuma2estencao", function (req, res) {
+    res.send("2º ESTENÇÃO!");
+  });
 
   // Endpoints de Heróis
 
