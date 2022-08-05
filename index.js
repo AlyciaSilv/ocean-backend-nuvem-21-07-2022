@@ -23,7 +23,7 @@ async function main() {
   app.use(express.json());
 
   app.get("/", function (req, res) {
-    res.send("<h1>Olá Papai! coloque '/oi' no final da url para ver a outra mensagem! <button href='https://ocean-alycia-heroku-22-07.herokuapp.com/oi'>Click Here</button>");
+    res.send("<h1>Olá Papai! coloque '/oi' no final da url para ver a outra mensagem! <button href='/oi'>Click Here</button>");
   });
 
   // /oi -> "Olá, mundo"
