@@ -23,7 +23,7 @@ async function main() {
   app.use(express.json());
 
   app.get("/", function (req, res) {
-    res.send("Escolha o item que você quer comprar <button><a href='/oi'>Veja o catalogo aqui!</a></button>");
+    res.send("Escolha o item que você quer comprar <button><a href='/oi'>Veja o catalogo aqui!</a><th><td>ola</td><td>ola</td></th></button>");
   });
 
   // /oi -> "Olá, mundo"
