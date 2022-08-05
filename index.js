@@ -12,7 +12,7 @@ async function main() {
   const db = client.db(dbName);
   const collection = db.collection("herois");
 
-  console.log("<h1>Banco de dados conectado com sucesso!</h1>");
+  console.log("Banco de dados conectado com sucesso!");
 
   // Aplicação Backend com Express
 
@@ -23,7 +23,7 @@ async function main() {
   app.use(express.json());
 
   app.get("/", function (req, res) {
-    res.send("Olá Papai! coloque '/oi' no final da url para ver a outra mensagem!");
+    res.send("<h1>Olá Papai! coloque '/oi' no final da url para ver a outra mensagem!<h1>");
   });
 
   // /oi -> "Olá, mundo"
