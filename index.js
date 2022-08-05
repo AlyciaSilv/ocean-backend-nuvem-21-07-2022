@@ -23,7 +23,7 @@ async function main() {
   app.use(express.json());
 
   app.get("/", function (req, res) {
-    res.send("<h1>Olá Papai! coloque '/oi' no final da url para ver a outra mensagem! <button href="/oi">Click Here</button></h1>");
+    res.send("<h1>Olá Papai! coloque '/oi' no final da url para ver a outra mensagem! <button href='/oi'>Click Here</button>");
   });
 
   // /oi -> "Olá, mundo"
@@ -36,7 +36,7 @@ async function main() {
 
   // Endpoints de Heróis
 
-  const herois = ["Mulher Maravilha", "Capitã Marvel", "Homem de Ferro"];
+//   const herois = ["Mulher Maravilha", "Capitã Marvel", "Homem de Ferro"];
   //               0                   1                2
 
   // [GET] /herois -> Read All (Ler tudo)
