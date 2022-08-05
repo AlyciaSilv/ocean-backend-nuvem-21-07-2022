@@ -12,7 +12,7 @@ async function main() {
   const db = client.db(dbName);
   const collection = db.collection("herois");
 
-  console.log("Banco de dados conectado com sucesso!");
+  console.log("<h1>Banco de dados conectado com sucesso!</h1>");
 
   // Aplicação Backend com Express
 
