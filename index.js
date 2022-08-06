@@ -28,7 +28,7 @@ async function main() {
 
   // /oi -> "Olá, mundo"
   app.get("/oi", function (req, res) {
-    res.send("<h2>Escolhe uma fruta para comprar</h2><select><option>Escolha...</option><option>Banana</option><option>Maçã</option><option>Kiwi</option><option>Laranja</option></select>");
+    res.send("<h2>Escolhe uma fruta para comprar</h2><select><option>Escolha...</option><option><a href='/herois'>Banana</a></option><option>Maçã</option><option>Kiwi</option><option>Laranja</option></select>");
   });
 
 
